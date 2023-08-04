@@ -1,0 +1,86 @@
+/* main */
+main {}
+/* main - 1. visual */
+main .visual {
+    position: relative; z-index: 10;
+    height: 100vh; overflow: hidden;
+}
+main .visual .txt {
+    position: absolute;
+    text-align: center;
+    z-index: 30;
+    width: 100%; top:40%;
+}
+main .visual .txt p {
+    font-size: 2.369rem; letter-spacing: -0.02em;
+    color:#fff;
+}
+main .visual .txt h1 {
+    margin-top: 30px;
+    font-size: 3.157rem; font-weight: 700; letter-spacing: -0.02em;
+    color:#fff;
+}
+main .visual .txt .link {
+    display: flex; flex-flow:row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .visual .txt .link a {
+    width: 270px; padding:20px 0;
+    border:1px solid #fff;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1.333rem;
+    margin: 30px 10px 0 0;
+    color:#fff;
+    transition: all 0.3s;
+}
+main .visual .txt .link a:hover {background-color: rgba(255, 255, 255, 0.7); color:#000;}
+main .visual .txt .link a:last-child {margin-right: 0;}
+main .visual video {
+    width: 100%;
+    /* 화면크기 조정 시 비디오 중심축 맞추기 */
+    /* 필수조건 비디오의 부모가 vh or px높이설정 준비 */
+    transform: translateX(-50%);
+    position: absolute; left:50%;
+    /* 방법3 절대크기값 */
+    /* width: 1920px; */
+}
+/* 와이드 비율의 video 화면 전체 배치시 여백 해결법 */
+/* 1. 반응형웹 @media 특정해상도마다 비디오의 크기 설정값 변경 */
+/* 2. 가장 큰 데스크탑 기준으로 너비를 100%보다 크게 설정하고 넘치게 하는 방법 */
+/* 3. 상대크기가 아닌 절대 크기값(px) 크기를 설정해서 화면 해상도에 영향을 받지 않는 방법 */
+/* main - 2. bnr */
+main .adver_bnr {
+    height: 300px;
+    background: url(../images/bnr.jpg) no-repeat center;
+    background-size:cover;
+}
+main .adver_bnr .txt {
+    display: flex;
+    flex-flow:column nowrap;
+    padding: 65px 145px 0 0;
+    align-items: flex-end;
+    gap:20px;
+}
+main .adver_bnr .txt p {
+    font-size: 1.777rem; letter-spacing: -0.02em;
+    color:#fff;
+}
+main .adver_bnr .txt h2 {
+    font-size: 3.157rem; font-weight: 700; letter-spacing: -0.02em;
+    color:#fff;
+}
+main .adver_bnr .txt .link {}
+main .adver_bnr .txt .link a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0; width: 180px;
+    background-color: #fff;
+    border-radius:10px;
+    font-size: 1.333rem;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+main .adver_bnr .txt .link a:last-child {margin-right: 0;}
+main .adver_bnr .txt .link a:hover {background-color: #000; color: #fff;}
