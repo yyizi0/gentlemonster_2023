@@ -57,17 +57,20 @@ main .adver_bnr {
     background-size:cover;
 }
 main .adver_bnr .txt {
+    /* background-color: aqua; */
+    /* contents width px */
+    max-width: 1200px; margin: 0 auto;
     display: flex;
     flex-flow:column nowrap;
-    padding: 65px 145px 0 0;
     align-items: flex-end;
+    padding-top: 60px;
     gap:20px;
 }
 main .adver_bnr .txt p {
     font-size: 1.777rem; letter-spacing: -0.02em;
     color:#fff;
 }
-main .adver_bnr .txt h2 {
+main .adver_bnr .txt h1 {
     font-size: 3.157rem; font-weight: 700; letter-spacing: -0.02em;
     color:#fff;
 }
@@ -84,3 +87,67 @@ main .adver_bnr .txt .link a {
 }
 main .adver_bnr .txt .link a:last-child {margin-right: 0;}
 main .adver_bnr .txt .link a:hover {background-color: #000; color: #fff;}
+/* main 3. service */
+main #online_service {
+    background:url(../images/service_bg1.jpg) no-repeat right center;
+    background-size: 80%;
+    margin-top: 100px;
+    padding-top: 60px;
+}
+main #online_service .txt {
+    background: #fff;
+    width: 870px;
+    padding: 80px 147px;
+}
+main #online_service .txt h1 {
+    font-size: 3.157rem; font-weight: 700;
+    letter-spacing: -0.02em;
+}
+main #online_service .txt p {
+    font-size: 1.25rem; letter-spacing: -0.02em;
+    line-height: 35px; margin: 40px 0;
+}
+main #online_service .txt .online_btn {}
+main #shop_service {
+    background:url(../images/service_bg2.jpg) no-repeat left center;
+    background-size: 80%;
+    margin-top: 80px;
+    padding-top: 60px;
+    display: flex;
+    flex-flow:row-reverse;
+}
+main #shop_service .txt {
+    background: #fff;
+    width: 870px;
+    padding: 80px 147px;
+    text-align: right;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: flex-end;
+}
+main #shop_service .txt h1 {
+    font-size: 3.157rem; font-weight: 700;
+    letter-spacing: -0.02em;
+}
+main #shop_service .txt p {
+    font-size: 1.25rem; letter-spacing: -0.02em;
+    line-height: 35px; margin: 40px 0;
+}
+main #shop_service .txt .shop_btn {}
+/* a button */
+main #online_service .txt .online_btn,
+main #shop_service .txt .shop_btn {
+    display: block;
+    background: #000;
+    color:#fff;
+    text-align: center;
+    width: 200px;
+    padding: 20px 0px;
+    border-radius: 20px;
+    font-size: 1.333rem;
+    transition:background 0.3s;
+}
+main #online_service .txt .online_btn:hover,
+main #shop_service .txt .shop_btn:hover {
+    background: #5873FF;
+}
