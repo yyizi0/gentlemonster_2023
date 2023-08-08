@@ -106,3 +106,21 @@ header #open_nav nav a:hover {
 header #open_nav nav a:hover::after {
     transform: scaleX(1);
 }
+/* footer */
+footer {
+    width: calc(100% - 60px); margin: 0 auto;
+    padding: 50px 0;
+}
+footer .f_menu {display: flex; margin-bottom: 181px;}
+footer .f_menu dl {margin-right: 110px;}
+footer .f_menu dl:last-child {margin-right: 0;}
+footer .f_menu dl dt {font-size: 1.333rem; font-weight: 500; margin-bottom: 18px;}
+footer .f_menu dl dd {margin-bottom: 18px;}
+footer .f_menu dl dd:last-child {margin-bottom: 0;}
+footer .f_menu dl dd a {letter-spacing: -0.02rem; color:#888; transition: color 0.1s;}
+footer .f_menu dl dd a:hover {color:#000;}
+footer .f_copy {display: flex; align-items: center; justify-content: space-between;}
+footer .f_copy .logo {width: 213px; }
+footer .f_copy .logo img {width: 100%;}
+footer .f_copy address {width:80%; font-size: 0.75rem; line-height: 20px;}
+footer .f_copy address a {font-size: 0.75rem; text-decoration: underline;}
