@@ -1,0 +1,114 @@
+/* main */
+main {
+    display: flex; flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main h1 {max-width: 291px; margin: 78px auto;}
+main h1 a {}
+main h1 a img {width: 100%;}
+main .login_wrap {max-width: 640px;}
+/* 로그인 상단 회원/비회원 탭 */
+main .login_wrap .login_title {
+    display: flex;
+    justify-content: center;
+    background-color: #d9d9d9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+main .login_wrap .login_title button {
+    background: none;
+    color:#888;
+    width: 50%;
+    padding: 30px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size:1.333rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+main .login_wrap .login_title button.active {
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid #222;
+    border-bottom: none;
+    color:#000;
+}
+main .login_wrap .login_title #member {}
+main .login_wrap .login_title #nonMember {}
+/* 로그인 하단 내용 영역 */
+main .login_contents {}
+/* 로그인 내용 공통 css */
+main .login_wrap .login_contents > div {}
+main .login_wrap .login_contents > div form {}
+main .login_wrap .login_contents > div form fieldset {
+    display: flex; flex-flow:column nowrap;
+    justify-content: flex-start;
+    position: relative;
+}
+main .login_wrap .login_contents > div form fieldset .text {position: relative; margin-bottom: 40px;}
+main .login_wrap .login_contents > div form fieldset .text label {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+}
+main .login_wrap .login_contents > div form fieldset .text label:last-of-type {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+main .login_wrap .login_contents > div form fieldset .text label input {width: calc(100% - 47px);}
+main .login_wrap .login_contents > div form fieldset .text label input::placeholder {
+    color:#888;
+    font-size:1.333rem; letter-spacing: -0.02rem;
+}
+main .login_wrap .login_contents > div form fieldset .text label img {margin-right: 17px;}
+main .login_wrap .login_contents > div form fieldset .text .show_pw {
+    position: absolute;
+    right: 20px; bottom: 29px;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* 로그인 버튼 */
+main .login_wrap .login_contents > div form fieldset .btn_wrap {}
+main .login_wrap .login_contents > div form fieldset .btn_wrap button {
+    width:100%;
+    background-color: #222;
+    border-radius: 20px;
+    color:#fff;
+    padding: 30px 0;
+    font-size:1.333rem; letter-spacing: -0.02rem;
+}
+/* sns */
+main .login_wrap .login_contents > div .sns_login {padding: 40px;}
+main .login_wrap .login_contents > div .sns_login a {margin-right: 20px;}
+/* 회원 로그인 */
+/* 아이디저장 */
+main .login_wrap .login_contents .member_login form fieldset .id_save_wrap {text-align: left; padding: 0 20px 40px;}
+main .login_wrap .login_contents .member_login form fieldset .id_save_wrap #id_save {appearance: none;}
+main .login_wrap .login_contents .member_login form fieldset .id_save_wrap label {
+    background: url(../images/icon_checkbox_non.png) no-repeat left;
+    padding-left: 37px;
+    cursor: pointer;
+}
+main .login_wrap .login_contents .member_login form fieldset .id_save_wrap #id_save:checked + label {
+    background: url(../images/icon_checkbox_ok.png) no-repeat left;
+}
+main .login_wrap .login_contents .member_login .service_menu {
+    padding:40px; border-bottom: 1px solid #d9d9d9;
+    display: flex; flex-flow:row wrap; justify-content: center; 
+}
+main .login_wrap .login_contents .member_login .service_menu a {color:#888;}
+main .login_wrap .login_contents .member_login .service_menu a::after {
+    display: inline-block; content:'';
+    width: 1px; height: 14px;
+    background-color:#888;
+    margin:0 30px;
+}
+main .login_wrap .login_contents .member_login .service_menu a:last-child:after {display: none;}
+/* 비회원 로그인 */
+main .login_wrap .login_contents .nonMember_login .service {
+    display: block;
+    text-decoration: underline; padding: 40px;
+    border-bottom: 1px solid #d9d9d9;
+}
+main .login_wrap .login_contents .nonMember_login p {padding-top: 40px; color:#888;}
