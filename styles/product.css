@@ -1,18 +1,49 @@
+/* main */
 main {}
-/* category */
+/* 1. swiper-slide */
+main #product_slide {margin-bottom: 50px;}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통 slide1~6 */
+    width:700px; height: 740px;
+    position: relative;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt {
+    position: absolute; bottom: 70px; left: 70px;
+    /* 초기 숨기기(이후 swiper 활용 서서히 나타나고 사라지기 기능 추가) */
+    opacity: 0; transform: translateX(60px);
+    transition:all 2s ease-out;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt dt {font-size: 3.157rem; line-height: 72px;}
+main #product_slide .swiper-wrapper .swiper-slide .txt dt em {font-size: 3.157rem; font-weight: 700;}
+main #product_slide .swiper-wrapper .swiper-slide .txt dd {font-size: 1.777rem; font-weight: 500; margin-top: 30px;}
+main #product_slide .swiper-wrapper .slide1 {background-image:url(../images/model/model_01.jpg);}
+main #product_slide .swiper-wrapper .slide2 {background-image:url(../images/model/model_02.jpg);}
+main #product_slide .swiper-wrapper .slide3 {background-image:url(../images/model/model_03.jpg);}
+main #product_slide .swiper-wrapper .slide4 {background-image:url(../images/model/model_04.jpg);}
+main #product_slide .swiper-wrapper .slide5 {background-image:url(../images/model/model_05.jpg);}
+main #product_slide .swiper-wrapper .slide6 {background-image:url(../images/model/model_06.jpg);}
+/* swiper-scrollbar design */
+main #product_slide .swiper-scrollbar {
+    background-color: rgba(0,0,0,0.2);
+    bottom: 40px; left:50%; transform:translateX(-50%);
+    width: 500px;
+}/* 스크롤 배경 */
+main #product_slide .swiper-scrollbar-drag {background-color: #222;}/* 스크롤 막대(크기x) */
+/* 2. category */
 main #category {
     max-width: 1350px; margin: 0 auto;
     display: flex; justify-content: space-between;
     text-align: center;
     gap:20px;
-    margin-bottom: 96px;
+    margin-bottom: 100px;
 }
 main #category a {width: 170px;}
 main #category a:hover img {filter: brightness(90%);}
 main #category a:hover span {font-weight: 700;}
 main #category a img {width: 100%;  margin-bottom: 20px; transition: filter 0.3s;}
 main #category a span {font-size: 1.333rem;}
-/* product list */
+/* 3. product list */
 main #product_list {width: 90%; margin: 0 auto;}
 /* title */
 main #product_list .title {}
