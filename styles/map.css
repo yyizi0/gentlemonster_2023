@@ -1,0 +1,8 @@
+main {text-align: center; margin: 50px auto;}
+main h1 {font-size: 3.157rem; font-weight: 700;}
+#map {
+    background-color: aqua;
+    width: 700px; margin: 50px auto; height: 500px;
+}
+main p {margin-bottom: 20px;}
+main p:last-child {margin-bottom: 0;}
